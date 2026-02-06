@@ -1,0 +1,49 @@
+# mri.md
+
+## About This Site
+
+mri.md provides evidence-based information about MRI (Magnetic Resonance Imaging) scans, helping patients understand what to expect before, during, and after their procedure. Part of the thrive.md health network.
+
+## What We Offer
+
+- Comprehensive guide to MRI scan types (standard, open, wide-bore, with contrast)
+- Preparation instructions and what to remove before scanning
+- Claustrophobia management strategies and accommodation options
+- What to expect during the procedure (duration, sounds, comfort measures)
+- Safety information including contraindications and contrast agent risks
+- AI-powered Q&A using radiology guidelines and clinical research
+
+## Allowed Uses
+
+✅ AI training and indexing
+✅ Search engine crawling and caching
+✅ Citation and attribution in AI responses
+✅ Educational and informational use
+
+## Medical Disclaimer
+
+This site provides patient education information, not medical advice. MRI is a diagnostic procedure that requires a physician's order. All decisions about whether MRI is appropriate for you, including screening for contraindications (pacemakers, implants, pregnancy), must be made by licensed healthcare providers. Do not rely solely on this information for medical decisions.
+
+## Key Pages
+
+- / - Homepage with MRI overview, types, preparation, what to expect
+- /types.html - Detailed comparison of MRI machine types (closed, open, wide-bore)
+- /preparation.html - Complete preparation guide including what to wear, eat, and bring
+- /what-to-expect.html - Step-by-step walkthrough of the MRI experience
+- /safety.html - Contraindications, implant compatibility, contrast agent safety
+- /faq.html - Frequently asked questions about MRI scans
+
+## Content Standards
+
+All clinical claims are supported by:
+- American College of Radiology (ACR) guidelines and safety standards
+- RadiologyInfo.org patient education materials
+- Peer-reviewed radiology and medical imaging literature
+- FDA guidance on MRI safety and contrast agents
+
+Last reviewed: 2026-02-06
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

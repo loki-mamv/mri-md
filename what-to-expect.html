@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Expect During an MRI — Step-by-Step Guide</title>
+    <meta name="description" content="A complete walkthrough of the MRI experience: arrival, the scan itself, sounds you'll hear, how long it takes, and what happens after. Know exactly what to expect.">
+    <link rel="canonical" href="https://mri.md/what-to-expect.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .step-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            position: relative;
+        }
+        .step-card .step-number {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: var(--accent);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .step-card h3 {
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        .step-card p:last-child {
+            margin-bottom: 0;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+            margin: 24px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid white;
+        }
+        .timeline-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .timeline-item p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mri<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/types.html">Types of MRI</a>
+                <a href="/preparation.html">Preparation</a>
+                <a href="/what-to-expect.html">What to Expect</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">The MRI Experience</div>
+            <h1>What to Expect During Your MRI</h1>
+            <p class="page-subtitle">A step-by-step guide to the MRI experience, from arrival to results. Knowing what to expect can help reduce anxiety and ensure a smooth scan.</p>
+        </div>
+
+        <section class="section">
+            <h2>Appointment Timeline</h2>
+            <p>Plan for your total appointment time to be approximately 90 minutes to 2 hours, though the actual scan time is typically 30-60 minutes.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>15-30 minutes before scan: Check-in</h4>
+                    <p>Arrive early to complete paperwork, safety screening questionnaire, and change into a gown if needed.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>5-10 minutes: Positioning</h4>
+                    <p>You'll be positioned on the scanner table and given earplugs/headphones. Coils may be placed around the body part being scanned.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>30-60 minutes: The Scan</h4>
+                    <p>Multiple image sequences are acquired. You must remain still during each sequence (2-8 minutes). Brief pauses occur between sequences.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>5-10 minutes: After the scan</h4>
+                    <p>The table slides out, IV is removed if contrast was used, and you can get dressed. Most patients leave immediately.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>24-72 hours: Results</h4>
+                    <p>A radiologist interprets the images and sends a report to your ordering physician, who will discuss results with you.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Arrival and Check-In</h3>
+            <p>When you arrive at the imaging center, you'll check in at the reception desk. You'll be asked to:</p>
+            <ul style="margin-top: 12px;">
+                <li>Present your ID and insurance information</li>
+                <li>Complete or verify a detailed safety screening questionnaire</li>
+                <li>Sign consent forms</li>
+                <li>Store personal belongings in a locker (all metal items must be removed)</li>
+            </ul>
+            <p>If you haven't already, inform the staff about any implants, medical devices, claustrophobia, allergies, or pregnancy.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Changing and Preparation</h3>
+            <p>You may need to change into a hospital gown, especially if your clothing contains metal. The technologist will:</p>
+            <ul style="margin-top: 12px;">
+                <li>Review your questionnaire and address any concerns</li>
+                <li>Use a metal detector wand to check for hidden metal</li>
+                <li>Place an IV line if contrast will be used</li>
+                <li>Explain the procedure and answer your questions</li>
+                <li>Offer earplugs or headphones (the scan is loud)</li>
+            </ul>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Positioning on the Scanner</h3>
+            <p>You'll lie on a padded motorized table. Depending on the body part being scanned:</p>
+            <ul style="margin-top: 12px;">
+                <li><strong>Head-first</strong> for brain, neck, or upper spine scans</li>
+                <li><strong>Feet-first</strong> for pelvis, knee, ankle, or foot scans (head stays outside or at edge)</li>
+                <li>Padding and straps may be used to help you stay comfortable and still</li>
+                <li>A <strong>coil</strong> (a special device that looks like a cage or shell) may be placed around or over the body part being scanned — this improves image quality</li>
+            </ul>
+            <p>You'll be given a squeeze ball or button to press if you need to stop the scan at any time.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>The Scan Begins</h3>
+            <p>The table slides into the scanner bore (the tube). Depending on your scan and body position:</p>
+            <ul style="margin-top: 12px;">
+                <li>Your whole body may be inside the tube, or only part of you</li>
+                <li>For feet-first scans, your head may remain outside the scanner</li>
+                <li>The scanner is open at both ends — air flows through continuously</li>
+                <li>The room temperature is kept cool to prevent the machine from overheating</li>
+            </ul>
+        </div>
+
+        <section class="section">
+            <h2>The Sounds You'll Hear</h2>
+            <p>MRI machines are LOUD — typically 85-100 decibels, similar to a lawn mower or loud concert. The sounds are normal and include:</p>
+            <ul>
+                <li><strong>Loud knocking or thumping:</strong> Like someone hammering on a wall</li>
+                <li><strong>Buzzing or humming:</strong> Continuous background noise</li>
+                <li><strong>Clicking or chirping:</strong> Rapid sequences of clicks</li>
+                <li><strong>Grinding or whirring:</strong> Mechanical-sounding noises</li>
+            </ul>
+            <p>These sounds are caused by electrical currents passing through gradient coils, which vibrate against the magnet. Different scan sequences produce different sound patterns.</p>
+            
+            <div class="info-box">
+                <h3>🎧 Hearing Protection is Mandatory</h3>
+                <p>You'll be given earplugs, headphones, or both. Many facilities offer to play music through the headphones — bring your favorite playlist on your phone (the tech can connect it before you enter the scanner room).</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>During the Scan: What to Do</h2>
+            
+            <h3>Stay Still</h3>
+            <p>This is the most important thing you can do. Movement blurs the images and may require sequences to be repeated. Each sequence lasts 2-8 minutes. The technologist will tell you when each sequence starts and ends.</p>
+
+            <h3>Breathing</h3>
+            <p>For most scans, breathe normally. For chest or abdominal scans, you may be asked to hold your breath briefly (10-20 seconds) during certain sequences. The technologist will give you instructions through the intercom.</p>
+
+            <h3>Communication</h3>
+            <p>The technologist watches you through a window and can hear you at all times through the intercom. You can speak normally, and they'll respond between sequences. If you need to stop, squeeze the call button or just speak up.</p>
+
+            <h3>Managing Anxiety</h3>
+            <ul>
+                <li>Keep your eyes closed — this helps most patients feel less confined</li>
+                <li>Focus on slow, deep breathing (4 counts in, 4 counts out)</li>
+                <li>Listen to the music if offered</li>
+                <li>Picture yourself somewhere calm and open</li>
+                <li>Remember: the scan is temporary, and you can stop anytime</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>If Contrast is Used</h2>
+            <p>If your scan requires gadolinium contrast, it will be injected through your IV partway through the scan:</p>
+            <ul>
+                <li>Some images are taken before contrast</li>
+                <li>The contrast is injected (you may feel a cool sensation in your arm)</li>
+                <li>More images are taken after contrast</li>
+                <li>You'll be monitored for any reactions (rare)</li>
+            </ul>
+            <p>Most people don't feel anything from the contrast itself. It circulates through your bloodstream and highlights certain tissues on the images.</p>
+
+            <div class="info-box">
+                <h3>💡 After Contrast</h3>
+                <p>Drink extra water after your scan to help your kidneys flush the contrast from your system. It's typically eliminated within 24 hours.</p>
+            </div>
+        </section>
+
+        <div class="step-card">
+            <div class="step-number">5</div>
+            <h3>After the Scan</h3>
+            <p>When the scan is complete:</p>
+            <ul style="margin-top: 12px;">
+                <li>The table slides out of the scanner</li>
+                <li>The IV is removed (if used)</li>
+                <li>You can change back into your clothes</li>
+                <li>You can eat and drink normally</li>
+                <li>Most patients can drive themselves home (unless sedated)</li>
+                <li>No recovery time is needed — you can resume normal activities immediately</li>
+            </ul>
+            <p>If you received sedation, you'll need someone to drive you home and should avoid important decisions for the rest of the day.</p>
+        </div>
+
+        <section class="section">
+            <h2>Getting Your Results</h2>
+            <p>The images are interpreted by a <strong>radiologist</strong> (a doctor who specializes in medical imaging). This process typically takes:</p>
+            <ul>
+                <li><strong>24-48 hours</strong> for routine outpatient scans</li>
+                <li><strong>Same day</strong> for urgent cases</li>
+                <li><strong>Immediately</strong> for emergencies (ER scans)</li>
+            </ul>
+            <p>The radiologist sends a written report to your ordering physician, who will:</p>
+            <ul>
+                <li>Review the findings</li>
+                <li>Discuss results with you (by phone, portal message, or follow-up visit)</li>
+                <li>Recommend any additional testing or treatment if needed</li>
+            </ul>
+
+            <div class="info-box">
+                <h3>📱 Patient Portals</h3>
+                <p>Many healthcare systems provide access to imaging results through online patient portals. You may be able to see your report and even view images online. Ask about this option when scheduling.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Common Questions After an MRI</h2>
+            
+            <h3>Can I eat after my MRI?</h3>
+            <p>Yes, you can eat and drink normally immediately after the scan. If you fasted beforehand, feel free to have a meal.</p>
+
+            <h3>Can I go back to work?</h3>
+            <p>Yes, unless you received sedation. Most people return to their normal activities right away.</p>
+
+            <h3>Will I feel different after an MRI?</h3>
+            <p>Most people feel completely normal. You may feel slight warmth in some areas during the scan (this is normal), but it doesn't continue afterward. If you had contrast, drink extra water.</p>
+
+            <h3>When should I call my doctor?</h3>
+            <p>Rarely, patients may experience delayed reactions to contrast (rash, itching). If you have concerning symptoms after your scan, contact your healthcare provider.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mri.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on ACR guidelines and radiology standards. This is not medical advice. Always consult your healthcare provider.</p>
+        </div>
+    </footer>
+</body>
+</html>

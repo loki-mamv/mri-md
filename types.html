@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of MRI — Open, Closed, Wide-Bore & Contrast MRI</title>
+    <meta name="description" content="Compare MRI machine types: standard closed MRI, open MRI for claustrophobia, wide-bore MRI, and MRI with contrast. Learn which type is best for your needs.">
+    <link rel="canonical" href="https://mri.md/types.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .type-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .type-card h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .type-card .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 16px;
+        }
+        .type-card .pros h4,
+        .type-card .cons h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .type-card .pros h4 { color: #059669; }
+        .type-card .cons h4 { color: #dc2626; }
+        .type-card .pros ul,
+        .type-card .cons ul {
+            margin: 0;
+            padding-left: 16px;
+            font-size: 14px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .comparison-table { font-size: 13px; }
+            .comparison-table th, .comparison-table td { padding: 8px 10px; }
+            .type-card .pros-cons { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mri<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/types.html">Types of MRI</a>
+                <a href="/preparation.html">Preparation</a>
+                <a href="/what-to-expect.html">What to Expect</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">MRI Machine Types</div>
+            <h1>Types of MRI Scanners</h1>
+            <p class="page-subtitle">Understanding the differences between closed, open, and wide-bore MRI machines helps you prepare for your scan and discuss options with your healthcare provider.</p>
+        </div>
+
+        <section class="section">
+            <h2>Quick Comparison</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Standard Closed</th>
+                        <th>Open MRI</th>
+                        <th>Wide-Bore</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bore Size</strong></td>
+                        <td>60 cm diameter</td>
+                        <td>Open on sides</td>
+                        <td>70 cm diameter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Field Strength</strong></td>
+                        <td>1.5T or 3T</td>
+                        <td>0.3T - 1.0T (most)</td>
+                        <td>1.5T or 3T</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Image Quality</strong></td>
+                        <td>Excellent</td>
+                        <td>Good (lower resolution)</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scan Time</strong></td>
+                        <td>30-60 min</td>
+                        <td>45-90 min (longer)</td>
+                        <td>30-60 min</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Claustrophobia</strong></td>
+                        <td>Most challenging</td>
+                        <td>Best for anxiety</td>
+                        <td>Good compromise</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Weight Limit</strong></td>
+                        <td>~300-400 lbs</td>
+                        <td>~500+ lbs</td>
+                        <td>~450-550 lbs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="type-card">
+            <h3>Standard Closed MRI (1.5T & 3T)</h3>
+            <p>The most common type of MRI scanner. Patients lie on a table that slides into a cylindrical tube approximately 60 cm (24 inches) in diameter and about 6 feet long.</p>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✓ Advantages</h4>
+                    <ul>
+                        <li>Highest image quality and resolution</li>
+                        <li>Faster scan times</li>
+                        <li>Best for detailed brain, spine, and small joint imaging</li>
+                        <li>Most widely available</li>
+                        <li>3T machines offer even higher resolution for specialized studies</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>✗ Considerations</h4>
+                    <ul>
+                        <li>Can trigger claustrophobia (enclosed feeling)</li>
+                        <li>May not accommodate larger patients</li>
+                        <li>Louder than open MRI</li>
+                        <li>Limited positioning options for some patients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="type-card">
+            <h3>Open MRI</h3>
+            <p>Instead of a closed tube, open MRI machines have open sides or are designed like a large donut, allowing patients to see out and feel less confined. The magnet components are above and below the patient.</p>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✓ Advantages</h4>
+                    <ul>
+                        <li>Best option for severe claustrophobia</li>
+                        <li>Accommodates larger patients (higher weight limits)</li>
+                        <li>Children may find it less frightening</li>
+                        <li>Allows a support person to be closer during scan</li>
+                        <li>Better for patients who cannot lie flat</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>✗ Considerations</h4>
+                    <ul>
+                        <li>Lower magnetic field strength (usually 0.3T-1.0T)</li>
+                        <li>Lower image resolution/quality</li>
+                        <li>Longer scan times required</li>
+                        <li>May not be suitable for all diagnostic needs</li>
+                        <li>Less widely available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="type-card">
+            <h3>Wide-Bore MRI</h3>
+            <p>A compromise between standard and open MRI. Wide-bore scanners have a larger diameter opening (70 cm vs 60 cm) and are often shorter in length, reducing the enclosed feeling while maintaining high image quality.</p>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h4>✓ Advantages</h4>
+                    <ul>
+                        <li>Maintains high image quality (1.5T or 3T)</li>
+                        <li>More comfortable for claustrophobic patients</li>
+                        <li>Accommodates larger patients</li>
+                        <li>Shorter tunnel length means head may be outside for some scans</li>
+                        <li>Same scan times as standard MRI</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h4>✗ Considerations</h4>
+                    <ul>
+                        <li>Still enclosed (not open on sides)</li>
+                        <li>May not be available at all facilities</li>
+                        <li>May not fully resolve severe claustrophobia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>MRI with Contrast (Gadolinium)</h2>
+            <p>Any type of MRI machine can perform contrast-enhanced imaging. Gadolinium-based contrast agents are injected intravenously to enhance visualization of specific structures.</p>
+            
+            <h3>When Contrast is Used</h3>
+            <ul>
+                <li><strong>Tumor evaluation:</strong> Helps distinguish between different tissue types and identify tumor boundaries</li>
+                <li><strong>Inflammation:</strong> Highlights areas of active inflammation (e.g., multiple sclerosis lesions)</li>
+                <li><strong>Blood vessel imaging (MRA):</strong> Visualizes arteries and veins without invasive catheterization</li>
+                <li><strong>Infection assessment:</strong> Helps identify areas of infection and abscess formation</li>
+                <li><strong>Post-surgical evaluation:</strong> Distinguishes scar tissue from recurrent disease</li>
+            </ul>
+
+            <div class="info-box">
+                <h3>💡 Gadolinium vs. CT Contrast</h3>
+                <p>Gadolinium-based MRI contrast is different from the iodine-based contrast used in CT scans. If you've had a reaction to CT contrast, you may still be able to have MRI contrast safely (and vice versa). Always tell your doctor about any previous contrast reactions.</p>
+            </div>
+
+            <div class="warning-box">
+                <h3>⚠️ Kidney Function Warning</h3>
+                <p>Patients with severely reduced kidney function (GFR &lt;30) should generally avoid gadolinium contrast due to the risk of nephrogenic systemic fibrosis (NSF), a rare but serious condition. Blood tests to check kidney function are typically required before contrast administration.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Specialized MRI Types</h2>
+            
+            <h3>Functional MRI (fMRI)</h3>
+            <p>Measures brain activity by detecting changes in blood flow. Used for research, pre-surgical brain mapping, and studying neurological conditions. Requires standard closed MRI scanners.</p>
+
+            <h3>Cardiac MRI</h3>
+            <p>Specialized imaging of the heart with ECG gating to capture images between heartbeats. Evaluates heart structure, function, and blood flow. May take 60-90 minutes.</p>
+
+            <h3>MR Angiography (MRA)</h3>
+            <p>Focuses on blood vessels. Can be done with or without contrast. Commonly used to evaluate brain vessels, carotid arteries, and peripheral vasculature.</p>
+
+            <h3>Breast MRI</h3>
+            <p>Used for high-risk breast cancer screening and evaluating known breast cancer. Requires prone positioning (lying face-down) in a specialized coil.</p>
+
+            <h3>MR Enterography</h3>
+            <p>Specialized abdominal MRI to evaluate the small intestine, commonly used for Crohn's disease monitoring. Requires drinking contrast and fasting beforehand.</p>
+        </section>
+
+        <section class="section">
+            <h2>Choosing the Right MRI Type</h2>
+            <p>Your radiologist and ordering physician will recommend the appropriate MRI type based on:</p>
+            <ul>
+                <li>The clinical question being asked (what diagnosis is suspected)</li>
+                <li>The body part being imaged</li>
+                <li>Required image resolution and quality</li>
+                <li>Your physical comfort needs (claustrophobia, body size)</li>
+                <li>Available equipment at your imaging center</li>
+            </ul>
+
+            <div class="info-box">
+                <h3>💡 Ask About Your Options</h3>
+                <p>If you have concerns about claustrophobia or comfort, ask your doctor or the scheduling staff about wide-bore or open MRI options. While not every facility has all types, they can often refer you to one that does if your clinical situation allows.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mri.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on ACR guidelines and radiology standards. This is not medical advice. Always consult your healthcare provider.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Safety — Contraindications, Implants & Contrast Risks</title>
+    <meta name="description" content="Complete MRI safety guide: who can and cannot have an MRI, implant compatibility, pacemakers, pregnancy, contrast agent risks, and what to tell your doctor.">
+    <link rel="canonical" href="https://mri.md/safety.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--accent-dark);
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .success-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #22c55e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .success-box h3 {
+            color: #166534;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .success-box p {
+            color: #166534;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .safety-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .safety-table thead {
+            background: var(--bg-secondary);
+        }
+        .safety-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .safety-table td {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .safety-table tr:last-child td {
+            border-bottom: none;
+        }
+        .safe { color: #166534; font-weight: 500; }
+        .conditional { color: #b45309; font-weight: 500; }
+        .unsafe { color: #dc2626; font-weight: 500; }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .safety-table { font-size: 13px; }
+            .safety-table th, .safety-table td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">mri<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/types.html">Types of MRI</a>
+                <a href="/preparation.html">Preparation</a>
+                <a href="/what-to-expect.html">What to Expect</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Safety Information</div>
+            <h1>MRI Safety Guide</h1>
+            <p class="page-subtitle">MRI is extremely safe for most patients, but the powerful magnetic field requires careful screening. Here's what you need to know about MRI safety, implants, and contraindications.</p>
+        </div>
+
+        <div class="success-box">
+            <h3>✓ MRI Uses No Radiation</h3>
+            <p>Unlike X-rays, CT scans, and PET scans, MRI does not use ionizing radiation. It relies on magnetic fields and radio waves, making it safe for repeated scans and suitable for children, pregnant women (when clinically necessary), and patients requiring long-term monitoring.</p>
+        </div>
+
+        <section class="section">
+            <h2>The MRI Magnetic Field</h2>
+            <p>The MRI scanner generates an extremely powerful magnetic field — typically 1.5 to 3 Tesla, which is 30,000 to 60,000 times stronger than Earth's magnetic field. This magnetic field:</p>
+            <ul>
+                <li><strong>Is always on</strong> — even when the scanner appears inactive</li>
+                <li><strong>Can attract metal objects</strong> with dangerous force (oxygen tanks, IV poles, wheelchairs)</li>
+                <li><strong>Can cause metal implants to move, heat up, or malfunction</strong></li>
+                <li><strong>Can erase magnetic cards</strong> (credit cards, hotel keys)</li>
+                <li><strong>Can damage electronic devices</strong> (phones, hearing aids)</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>⚠️ Critical Safety Rule</h3>
+                <p>Never bring any metal or electronic device into the MRI room unless it has been specifically verified as MRI-safe. Objects can become dangerous projectiles. Fatal accidents have occurred when metal objects (like oxygen tanks) were brought into MRI rooms.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Implants and Medical Devices</h2>
+            <p>Modern implants are categorized into three safety levels:</p>
+            
+            <table class="safety-table">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Meaning</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="safe">MR Safe</td>
+                        <td>Safe in all MRI environments</td>
+                        <td>No restrictions</td>
+                    </tr>
+                    <tr>
+                        <td class="conditional">MR Conditional</td>
+                        <td>Safe under specific conditions (field strength, scan type, duration)</td>
+                        <td>Requires verification of conditions</td>
+                    </tr>
+                    <tr>
+                        <td class="unsafe">MR Unsafe</td>
+                        <td>Poses unacceptable risk in all MRI environments</td>
+                        <td>MRI not allowed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Common Implants and Devices</h3>
+            <table class="safety-table">
+                <thead>
+                    <tr>
+                        <th>Device/Implant</th>
+                        <th>Typical Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pacemakers (newer models)</td>
+                        <td class="conditional">Conditional</td>
+                        <td>Many since 2010 are MRI-conditional; requires cardiologist coordination</td>
+                    </tr>
+                    <tr>
+                        <td>Pacemakers (older models)</td>
+                        <td class="unsafe">Unsafe</td>
+                        <td>Generally contraindicated; discuss with cardiologist</td>
+                    </tr>
+                    <tr>
+                        <td>Defibrillators (ICD)</td>
+                        <td class="conditional">Varies</td>
+                        <td>Many newer models MRI-conditional; requires careful coordination</td>
+                    </tr>
+                    <tr>
+                        <td>Joint replacements (hip, knee)</td>
+                        <td class="safe">Usually Safe</td>
+                        <td>Most are non-ferromagnetic; may cause image artifacts near implant</td>
+                    </tr>
+                    <tr>
+                        <td>Metal plates, screws, rods</td>
+                        <td class="safe">Usually Safe</td>
+                        <td>Most orthopedic hardware is MRI-compatible after healing (6 weeks)</td>
+                    </tr>
+                    <tr>
+                        <td>Coronary stents</td>
+                        <td class="safe">Safe</td>
+                        <td>All modern stents are MRI-safe; can scan immediately after placement</td>
+                    </tr>
+                    <tr>
+                        <td>Heart valve replacements</td>
+                        <td class="safe">Usually Safe</td>
+                        <td>Most mechanical and biological valves are MRI-compatible</td>
+                    </tr>
+                    <tr>
+                        <td>Cochlear implants</td>
+                        <td class="conditional">Conditional</td>
+                        <td>Some models allow MRI under specific conditions; external parts must be removed</td>
+                    </tr>
+                    <tr>
+                        <td>Aneurysm clips (brain)</td>
+                        <td class="conditional">Varies</td>
+                        <td>Older clips may be unsafe; newer clips often MRI-conditional</td>
+                    </tr>
+                    <tr>
+                        <td>Dental implants/fillings</td>
+                        <td class="safe">Safe</td>
+                        <td>May cause local image distortion but are not dangerous</td>
+                    </tr>
+                    <tr>
+                        <td>IUDs (Mirena, Copper)</td>
+                        <td class="safe">Safe</td>
+                        <td>All IUDs approved for use in MRI</td>
+                    </tr>
+                    <tr>
+                        <td>Insulin pumps</td>
+                        <td class="unsafe">Usually Unsafe</td>
+                        <td>Must be removed before MRI; discuss with endocrinologist</td>
+                    </tr>
+                    <tr>
+                        <td>Spinal cord stimulators</td>
+                        <td class="conditional">Varies</td>
+                        <td>Some newer models MRI-conditional; requires manufacturer verification</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <h3>📋 Bring Your Implant Card</h3>
+                <p>If you have any implanted device, bring documentation showing the manufacturer, model number, and MRI compatibility status. This information is essential for the radiology team to verify safety. Your cardiologist, surgeon, or device manufacturer can provide this information.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Absolute Contraindications</h2>
+            <p>MRI should generally <strong>not</strong> be performed in patients with:</p>
+            <ul>
+                <li><strong>Older (non-MRI-conditional) pacemakers or defibrillators</strong></li>
+                <li><strong>Certain brain aneurysm clips</strong> — especially older ferromagnetic clips</li>
+                <li><strong>Metallic foreign bodies in the eye</strong> — common in welders and metal workers who may have metal fragments embedded in the eye</li>
+                <li><strong>Certain cochlear implants</strong> — some older models</li>
+                <li><strong>Some neurostimulators and drug infusion pumps</strong></li>
+            </ul>
+            <p>In these cases, alternative imaging (CT, ultrasound, or X-ray) may be recommended.</p>
+        </section>
+
+        <section class="section">
+            <h2>Gadolinium Contrast Safety</h2>
+            <p>Gadolinium-based contrast agents (GBCAs) are used in about 30% of MRI scans to enhance visualization. Safety considerations include:</p>
+            
+            <h3>Allergic Reactions</h3>
+            <ul>
+                <li><strong>Rate:</strong> Approximately 0.5-2% of patients (much lower than CT contrast)</li>
+                <li><strong>Most are mild:</strong> Nausea, headache, dizziness, injection site reactions</li>
+                <li><strong>Severe reactions:</strong> Very rare (approximately 1 in 10,000 to 1 in 100,000)</li>
+                <li><strong>Previous reaction:</strong> If you've had a reaction to gadolinium before, inform staff; premedication may be given</li>
+            </ul>
+
+            <h3>Kidney Function Concerns</h3>
+            <p>Patients with severely impaired kidney function (eGFR &lt;30) are at risk for <strong>nephrogenic systemic fibrosis (NSF)</strong>, a rare but serious condition. Therefore:</p>
+            <ul>
+                <li>Blood tests (creatinine/eGFR) are typically required before contrast administration</li>
+                <li>Patients with severe kidney disease should avoid gadolinium if possible</li>
+                <li>Newer "group II" contrast agents have lower NSF risk</li>
+                <li>If contrast is essential, risks and benefits are weighed carefully</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>⚠️ Kidney Disease Warning</h3>
+                <p>If you have kidney disease, are on dialysis, or have had a kidney transplant, inform your doctor and the imaging center before your scan. Blood tests may be required, and the decision to use contrast will be made carefully.</p>
+            </div>
+
+            <h3>Gadolinium Retention</h3>
+            <p>Research has shown that small amounts of gadolinium can be retained in the body (particularly the brain) after repeated contrast MRI scans. Current evidence suggests:</p>
+            <ul>
+                <li>Retention occurs with all types of gadolinium contrast, but is greater with certain types</li>
+                <li>No proven harmful effects have been associated with this retention to date</li>
+                <li>The FDA continues to monitor this issue</li>
+                <li>Contrast should only be used when clinically necessary</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>MRI During Pregnancy</h2>
+            <p>MRI is generally considered safe during pregnancy when medically necessary:</p>
+            <ul>
+                <li><strong>No ionizing radiation:</strong> Unlike X-rays and CT, MRI uses magnetic fields and radio waves</li>
+                <li><strong>No proven harmful effects:</strong> Extensive research has not shown harm to the fetus</li>
+                <li><strong>First trimester caution:</strong> MRI is typically avoided in the first trimester unless essential (out of general caution)</li>
+                <li><strong>Contrast avoided:</strong> Gadolinium crosses the placenta and is generally avoided during pregnancy unless absolutely necessary</li>
+            </ul>
+            <p>Always inform staff if you are or might be pregnant. The benefits and risks will be weighed for your specific situation.</p>
+        </section>
+
+        <section class="section">
+            <h2>Heating and Burns</h2>
+            <p>The radiofrequency energy used in MRI can cause tissue heating. This is rarely a problem but can occur if:</p>
+            <ul>
+                <li><strong>Skin-to-skin contact:</strong> Crossing arms or legs can create a loop that concentrates RF energy</li>
+                <li><strong>Metal touching skin:</strong> Jewelry, wires, or monitors left in contact with skin</li>
+                <li><strong>Tattoos:</strong> Some older tattoos contain metallic pigments that may heat (rare with modern inks)</li>
+                <li><strong>Medication patches:</strong> Some patches contain metal foil backing</li>
+            </ul>
+            <p>Technologists will position you carefully and check for these risk factors before scanning.</p>
+        </section>
+
+        <section class="section">
+            <h2>What to Tell Your MRI Team</h2>
+            <p>Always disclose:</p>
+            <ul>
+                <li>All implanted medical devices (even if you think they're "safe")</li>
+                <li>History of welding, metal grinding, or eye injuries involving metal</li>
+                <li>Pregnancy or possibility of pregnancy</li>
+                <li>Previous reactions to any contrast agent (MRI or CT)</li>
+                <li>Kidney disease or dialysis</li>
+                <li>Claustrophobia or anxiety disorders</li>
+                <li>Difficulty lying flat or still</li>
+                <li>Recent tattoos or permanent makeup</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 mri.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on ACR MR Safety Guidelines. This is not medical advice. Always consult your healthcare provider.</p>
+        </div>
+    </footer>
+</body>
+</html>
