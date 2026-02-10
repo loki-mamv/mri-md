@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PLACEHOLDER');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Your MRI Results: A Guide to Common Findings - mri.md</title>
+    <meta name="description" content="How to read and understand your MRI report, including common terminology, typical findings, and when to ask your doctor for clarification.">
+    <link rel="canonical" href="https://mri.md/blog/reading-mri-results.html">
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px; margin: 0 auto; padding: 16px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display); font-size: 22px; font-weight: 600;
+            color: var(--text-primary); text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 14px; font-weight: 500; transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        article {
+            max-width: 720px; margin: 0 auto; padding: 120px 24px 64px;
+        }
+        .article-header { margin-bottom: 40px; }
+        .article-eyebrow {
+            font-size: 13px; font-weight: 600; color: var(--accent);
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;
+        }
+        .article-date {
+            font-size: 14px; color: var(--text-muted); margin-top: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700; line-height: 1.2; margin-bottom: 16px;
+        }
+        .article-subtitle {
+            font-size: 18px; color: var(--text-secondary); line-height: 1.6;
+        }
+        .article-body h2 {
+            font-family: var(--font-display);
+            font-size: 24px; font-weight: 700; margin: 40px 0 16px;
+            padding-bottom: 8px; border-bottom: 2px solid var(--border);
+        }
+        .article-body h3 {
+            font-family: var(--font-display);
+            font-size: 20px; font-weight: 600; margin: 32px 0 12px;
+        }
+        .article-body p {
+            color: var(--text-secondary); margin-bottom: 16px; line-height: 1.8;
+        }
+        .article-body ul, .article-body ol {
+            color: var(--text-secondary); margin: 0 0 16px 24px;
+        }
+        .article-body li { margin-bottom: 8px; line-height: 1.7; }
+        .article-body blockquote {
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px; margin: 24px 0;
+            background: var(--bg-secondary); border-radius: 0 8px 8px 0;
+        }
+        .article-body blockquote p { color: var(--text-primary); margin-bottom: 0; }
+        .source-list {
+            background: var(--bg-secondary); border: 1px solid var(--border);
+            border-radius: 8px; padding: 24px; margin-top: 40px;
+        }
+        .source-list h3 {
+            font-family: var(--font-display); font-size: 18px;
+            margin: 0 0 12px; border: none; padding: 0;
+        }
+        .source-list ol { margin-left: 20px; }
+        .source-list li {
+            font-size: 14px; color: var(--text-muted); margin-bottom: 6px;
+        }
+        .source-list a { color: var(--accent); text-decoration: none; }
+        .source-list a:hover { text-decoration: underline; }
+        .back-link {
+            display: inline-block; margin-top: 32px; color: var(--accent);
+            text-decoration: none; font-weight: 500; font-size: 15px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        footer {
+            background: var(--bg-secondary); border-top: 1px solid var(--border);
+            padding: 48px 24px; margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px; margin: 0 auto; text-align: center;
+            font-size: 14px; color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            article { padding: 100px 16px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="../index.html" class="logo">mri<span>.md</span></a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../types.html">Types of MRI</a>
+                <a href="../preparation.html">Preparation</a>
+                <a href="../what-to-expect.html">What to Expect</a>
+                <a href="../blog/">Articles</a>
+                <a href="../faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <div class="article-header">
+            <div class="article-eyebrow">Understanding Results</div>
+            <h1>Understanding Your MRI Results: A Guide to Common Findings</h1>
+            <p class="article-date">February 9, 2026</p>
+        </div>
+
+        <div class="article-body">
+
+            <p>You have had your MRI, and now the results are available through your patient portal or your doctor's office. MRI reports are written by radiologists for other physicians, which means they are filled with technical language that can be confusing and sometimes alarming to patients. A finding that sounds frightening in medical terminology may actually be completely normal for your age and situation.</p>
+
+            <p>This guide explains common MRI terminology and findings to help you understand your report. It is not a substitute for discussing your results with your doctor, who can interpret the findings in the context of your specific symptoms and medical history.</p>
+
+            <h2>How an MRI Report Is Structured</h2>
+            <p>A typical MRI report contains several sections:</p>
+            <ul>
+                <li><strong>Clinical History / Indication:</strong> The reason the MRI was ordered. This tells the radiologist what clinical question needs to be answered.</li>
+                <li><strong>Technique:</strong> A description of the MRI sequences used and whether contrast was administered. This is primarily for other physicians and radiologists.</li>
+                <li><strong>Findings:</strong> The detailed observations, organized by anatomical structure. This is the meat of the report.</li>
+                <li><strong>Impression:</strong> A summary of the most important findings and the radiologist's interpretation. This is the section most physicians (and patients) read first.</li>
+            </ul>
+
+            <h2>Common Brain MRI Findings</h2>
+
+            <h3>White Matter Changes / Leukoaraiosis</h3>
+            <p>Perhaps the most common incidental finding on brain MRI, particularly in adults over 50, is small areas of increased signal in the white matter, often described as "white matter hyperintensities," "nonspecific white matter changes," or "small vessel ischemic disease." These bright spots on FLAIR sequences represent areas where tiny blood vessels in the brain have caused minor, chronic changes to the surrounding tissue.</p>
+
+            <p>In most people, these are a normal finding of aging. They are seen in roughly 10 to 20% of people in their 40s and in up to 90% of people over 80. Risk factors for more extensive white matter changes include hypertension, diabetes, smoking, and high cholesterol. Mild, age-appropriate white matter changes are generally not a cause for concern but may prompt your doctor to review your cardiovascular risk factors.</p>
+
+            <h3>Incidental Findings</h3>
+            <p>Brain MRIs frequently detect findings that are unrelated to the reason the scan was ordered. Studies suggest that incidental findings are present in 20 to 40% of brain MRIs. Common examples include arachnoid cysts (benign fluid-filled sacs), pineal cysts (small cysts in the pineal gland, almost always benign), enlarged perivascular spaces (normal fluid-filled channels around blood vessels), and small meningiomas (usually slow-growing, benign tumors). Most of these findings require no treatment, though some may warrant follow-up imaging to confirm stability.</p>
+
+            <h2>Common Spine MRI Findings</h2>
+
+            <h3>Degenerative Disc Disease</h3>
+            <p>Despite its name, degenerative disc disease is not a disease. It is the normal, age-related wear and tear of the intervertebral discs, the shock absorbers between the bones of the spine. On MRI, it appears as disc desiccation (loss of the disc's normal bright signal on T2 images), disc space narrowing, and sometimes disc bulging. By age 40, roughly 40% of people have evidence of disc degeneration on MRI, and by age 80, that figure approaches 90%. In many cases, degenerative changes found on MRI cause no symptoms at all.</p>
+
+            <h3>Disc Bulge vs. Disc Herniation</h3>
+            <p>A disc bulge refers to a broad, circumferential extension of the disc beyond its normal borders. Bulges are extremely common and are frequently asymptomatic. A disc herniation (also called a protrusion or extrusion, depending on its shape) is a more focal extension of disc material, often in a specific direction. Herniations are more likely to compress a nerve root and cause symptoms (radiculopathy), but even herniations can be incidental. A landmark 1994 study in the New England Journal of Medicine found that 52% of people with no back pain had at least one disc bulge on MRI, and 27% had a disc protrusion.</p>
+
+            <h3>Spinal Stenosis</h3>
+            <p>Spinal stenosis is a narrowing of the spinal canal or the openings through which nerves exit the spine (foraminal stenosis). It is usually caused by a combination of disc degeneration, facet joint arthritis, and thickening of ligaments. MRI reports often grade stenosis as mild, moderate, or severe. Mild stenosis is extremely common in older adults and may not cause any symptoms. Moderate to severe stenosis, particularly if it correlates with the patient's symptoms, may require further evaluation and treatment.</p>
+
+            <h2>Common Knee MRI Findings</h2>
+
+            <h3>Meniscus Tears</h3>
+            <p>The menisci are C-shaped pads of cartilage in the knee. Meniscal tears are among the most common knee MRI findings. They can result from acute injury (common in younger patients) or from degenerative wear (common in patients over 40). Not all meniscal tears cause symptoms. A 2008 study in the New England Journal of Medicine found that 61% of people over 50 with meniscal tears on MRI had no knee pain.</p>
+
+            <h3>Joint Effusion</h3>
+            <p>Joint effusion is fluid in the knee joint. A small amount of fluid is normal. Moderate to large effusions may indicate inflammation, injury, or arthritis. The MRI report may describe the effusion as "small," "moderate," or "large."</p>
+
+            <h3>Chondromalacia</h3>
+            <p>This term refers to softening or damage of the cartilage on the undersurface of the kneecap (patella). MRI reports grade chondromalacia from I (softening) to IV (full-thickness cartilage loss with exposed bone). Mild chondromalacia is very common and does not always correlate with symptoms.</p>
+
+            <h2>Key Terminology</h2>
+            <ul>
+                <li><strong>"Signal abnormality"</strong> or <strong>"signal change":</strong> An area that looks different from normal tissue. It does not inherently mean disease; the significance depends on the location and context.</li>
+                <li><strong>"Enhancement":</strong> An area that becomes brighter after contrast administration. Enhancement indicates increased blood flow or disruption of a tissue barrier, which can be seen in tumors, infections, and inflammation.</li>
+                <li><strong>"Incidental":</strong> A finding that is unrelated to the reason the MRI was performed. Incidental findings are common and usually benign.</li>
+                <li><strong>"Stable"</strong> or <strong>"unchanged":</strong> When compared to a prior scan, the finding has not changed. Stability over time is generally reassuring.</li>
+                <li><strong>"Recommend clinical correlation":</strong> The radiologist is saying that the imaging finding should be interpreted in light of the patient's symptoms. This is a reminder to your doctor to connect the dots between the image and your clinical presentation.</li>
+            </ul>
+
+            <h2>What to Do With Your Results</h2>
+            <p>Read the Impression section first, as it contains the radiologist's summary of the most important findings. If something in the report concerns you, write down your questions and bring them to your follow-up appointment. Remember that MRI is extraordinarily detailed and frequently detects findings that are normal variants or age-appropriate changes. A finding on MRI does not automatically mean you need treatment.</p>
+
+            <div class="source-list">
+                <h3>Sources</h3>
+                <ol>
+                    <li>Jensen MC, et al. Magnetic Resonance Imaging of the Lumbar Spine in People without Back Pain. <em>N Engl J Med</em>. 1994;331(2):69-73.</li>
+                    <li>Englund M, et al. Incidental Meniscal Findings on Knee MRI in Middle-Aged and Elderly Persons. <em>N Engl J Med</em>. 2008;359(11):1108-1115.</li>
+                    <li>Morris Z, et al. Incidental findings on brain magnetic resonance imaging: systematic review and meta-analysis. <em>BMJ</em>. 2009;339:b3016.</li>
+                    <li>Defined from Brinjikji W, et al. Systematic Literature Review of Imaging Features of Spinal Degeneration in Asymptomatic Populations. <em>AJNR Am J Neuroradiol</em>. 2015;36(4):811-816.</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <a href="/blog/" class="back-link">Back to all articles</a>
+    </article>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 mri.md &middot; Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">Information based on ACR and FDA guidelines. This is not medical advice.</p>
+        </div>
+    </footer>
+</body>
+</html>
