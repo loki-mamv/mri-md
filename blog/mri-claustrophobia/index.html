@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/mri-claustrophobia/#article"},
           "wordCount": "702",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can I be put to sleep for an MRI?", "acceptedAnswer": {"@type": "Answer", "text": "General anesthesia for MRI is available but uncommon. Most claustrophobic patients are successfully managed with oral sedation (a benzodiazepine like lorazepam), which keeps you relaxed but awake. General anesthesia is reserved for patients who cannot complete the scan with any other approach and is typically done at hospital-based MRI facilities."}}, {"@type": "Question", "name": "Is open MRI as good as closed MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Open MRI produces lower-quality images (typically 0.3-1.0 Tesla vs. 1.5-3.0 Tesla for closed bore). For many conditions, open MRI quality is adequate. For complex diagnoses requiring high resolution (brain tumors, small ligament tears, cardiac imaging), closed MRI is preferred. Wide-bore MRI (1.5T in a wider tube) offers a good compromise."}}, {"@type": "Question", "name": "How long is an MRI scan?", "acceptedAnswer": {"@type": "Answer", "text": "Typically 30-60 minutes for most scans. Simple exams (knee, ankle) may be 20-30 minutes. Complex exams (brain with contrast, cardiac MRI) can take 45-90 minutes. Ask your facility for the expected duration when scheduling so you can mentally prepare."}}, {"@type": "Question", "name": "Will my doctor prescribe anti-anxiety medication for an MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Most doctors will prescribe a mild sedative (like lorazepam 0.5-1mg) for MRI claustrophobia if you ask. Call your doctor's office well before your MRI appointment to request this \u2014 don't wait until the day of. mri.md recommends asking at the time of scheduling so the prescription is ready."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

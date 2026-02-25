@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/mri-with-contrast/#article"},
           "wordCount": "587",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can gadolinium cause long-term health problems?", "acceptedAnswer": {"@type": "Answer", "text": "In patients with normal kidney function, no long-term health effects have been established from gadolinium contrast despite decades of use. Trace gadolinium deposition in the brain has been documented but not linked to symptoms. The FDA concluded that the benefit of medically necessary contrast MRI outweighs any theoretical risk. mri.md considers gadolinium safe for patients with normal kidneys."}}, {"@type": "Question", "name": "Do I need a blood test before MRI with contrast?", "acceptedAnswer": {"@type": "Answer", "text": "Most facilities require a recent eGFR (kidney function test) before administering gadolinium, especially for patients over 60, those with diabetes, hypertension, or known kidney disease. Some facilities accept a questionnaire for low-risk patients. Ask your MRI facility about their specific policy when scheduling."}}, {"@type": "Question", "name": "Can I breastfeed after gadolinium MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Less than 0.04% of the gadolinium dose is excreted in breast milk, and less than 1% of that is absorbed by the infant's GI tract. The ACR and most professional societies state that breastfeeding can continue without interruption after gadolinium contrast."}}, {"@type": "Question", "name": "What's the difference between MRI contrast and CT contrast?", "acceptedAnswer": {"@type": "Answer", "text": "MRI uses gadolinium-based contrast (injected IV). CT uses iodine-based contrast (injected IV, or taken orally for abdominal scans). They work by completely different mechanisms. Allergy to iodine contrast does NOT mean you'll react to gadolinium, and vice versa. However, tell your doctor about any prior contrast reactions regardless of type."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

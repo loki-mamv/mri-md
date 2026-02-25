@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/brain-mri-findings/#article"},
           "wordCount": "583",
           "lastReviewed": "2026-02-24",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Are white spots on brain MRI dangerous?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. White matter hyperintensities are extremely common in adults over 50 and are typically related to normal aging and cardiovascular risk factors (especially high blood pressure). Scattered small spots in an older adult are considered normal. They're only concerning if extensive, progressive, or found in a young person. mri.md recommends managing blood pressure and cardiovascular health to minimize progression."}}, {"@type": "Question", "name": "What does 'mild atrophy' mean on brain MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Mild brain volume loss described as 'age-appropriate' is a normal finding. Everyone's brain shrinks slightly with age. This finding alone does not indicate dementia or cognitive decline. It becomes concerning only if volume loss is greater than expected for your age or concentrated in specific regions."}}, {"@type": "Question", "name": "Should I worry about an incidental finding on brain MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Most incidental brain MRI findings are benign and require no treatment. Pineal cysts, arachnoid cysts, and small white matter changes are common 'incidentalomas' that sound alarming but are clinically insignificant. If the radiologist's impression recommends no follow-up, you can generally feel reassured. If you're still anxious, discuss the specific finding with your doctor."}}, {"@type": "Question", "name": "How often should I repeat a brain MRI?", "acceptedAnswer": {"@type": "Answer", "text": "For routine incidental findings (small cysts, white matter changes), repeat imaging is often not needed unless symptoms develop. For monitoring known lesions, your neurologist will set a follow-up schedule \u2014 commonly 6-12 months for the first follow-up, then annually or less frequently if stable. Don't request repeat imaging for anxiety-driven reasons \u2014 it rarely provides additional reassurance."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

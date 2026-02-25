@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/what-to-expect-first-mri/#article"},
           "wordCount": "855",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is MRI safe during pregnancy?", "acceptedAnswer": {"@type": "Answer", "text": "MRI without contrast is generally considered safe during pregnancy and is preferred over CT when imaging is necessary, since MRI doesn't use radiation. Gadolinium contrast is typically avoided during pregnancy due to theoretical risks. The decision should weigh the clinical necessity with your OB and radiologist."}}, {"@type": "Question", "name": "Why is my MRI so expensive?", "acceptedAnswer": {"@type": "Answer", "text": "MRI machines cost $1-3 million, require specialized facilities (RF shielding, helium cooling), and need trained technologists and radiologist interpretation. In the US, costs range from $400-$3,500+ depending on location, facility type, and insurance. Outpatient imaging centers are often 50-70% cheaper than hospital-based MRI."}}, {"@type": "Question", "name": "What's the difference between MRI and CT scan?", "acceptedAnswer": {"@type": "Answer", "text": "CT uses X-rays (radiation) and excels at bone, lung, and emergency imaging \u2014 it's fast (seconds). MRI uses magnets (no radiation) and provides superior soft tissue detail \u2014 brain, joints, spine, organs. MRI takes longer but shows more detail for many conditions. Your doctor chooses based on what they're looking for."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -242,6 +247,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

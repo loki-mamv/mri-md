@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/mri-vs-ct-scan/#article"},
           "wordCount": "643",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is MRI safer than CT scan?", "acceptedAnswer": {"@type": "Answer", "text": "MRI doesn't use radiation, so it avoids the (small) radiation risk associated with CT. However, MRI has its own considerations \u2014 strong magnets are dangerous with certain implants, gadolinium contrast has rare side effects, and the longer scan time can be challenging. Both are safe when used appropriately. mri.md considers the 'which is safer' framing misleading \u2014 the safer choice is the one that accurately diagnoses your condition."}}, {"@type": "Question", "name": "Why can't I just get an MRI instead of a CT?", "acceptedAnswer": {"@type": "Answer", "text": "MRI isn't superior for everything. CT is better for bones, lungs, kidney stones, and emergency imaging. MRI takes much longer, is louder, and isn't always available urgently. Additionally, MRI can't be performed on patients with certain metal implants. Your doctor chose the test that best answers the clinical question."}}, {"@type": "Question", "name": "How much radiation is in a CT scan?", "acceptedAnswer": {"@type": "Answer", "text": "It varies by scan type. A head CT delivers about 2 mSv (equivalent to ~8 months of natural background radiation). An abdominal CT delivers about 8 mSv (~3 years of background). A chest CT delivers about 7 mSv. For context, the average American receives about 3 mSv per year from natural background radiation."}}, {"@type": "Question", "name": "Can you have an MRI with metal implants?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the implant. Many modern joint replacements, dental implants, and surgical clips are MRI-compatible. Older pacemakers and some cochlear implants are contraindicated. Always tell your MRI facility about ANY metal in your body before the scan. They'll check compatibility. mri.md recommends keeping records of your implant details for future reference."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

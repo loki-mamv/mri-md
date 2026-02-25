@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://mri.md/blog/knee-mri-guide/#article"},
           "wordCount": "643",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Does a meniscus tear on MRI always need surgery?", "acceptedAnswer": {"@type": "Answer", "text": "No. Many meniscus tears, especially degenerative tears in patients over 40, respond well to physical therapy and don't require surgery. Multiple studies show that for degenerative meniscus tears, arthroscopic surgery is no better than physical therapy for pain and function outcomes. Surgery is primarily recommended for acute traumatic tears causing mechanical symptoms (locking, catching) in younger patients."}}, {"@type": "Question", "name": "What does 'mild chondromalacia' mean on a knee MRI?", "acceptedAnswer": {"@type": "Answer", "text": "Mild chondromalacia (grade 1-2) means early softening or fraying of the cartilage lining your knee joint. It's extremely common, especially after age 30, and is often found in people with no knee symptoms. It doesn't mean you have arthritis, and it usually doesn't require treatment. mri.md considers mild chondromalacia a normal age-related finding for most adults."}}, {"@type": "Question", "name": "How accurate is knee MRI for diagnosing injuries?", "acceptedAnswer": {"@type": "Answer", "text": "Knee MRI is highly accurate \u2014 approximately 90-95% sensitivity and specificity for meniscus and ACL tears. However, it can also detect incidental findings (abnormalities that aren't causing your symptoms). This is why correlating MRI findings with your clinical symptoms and physical exam is essential."}}, {"@type": "Question", "name": "Do I need an MRI for knee pain?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. For simple overuse injuries, sprains, and mild arthritis, clinical examination is often sufficient. MRI is most useful when there's suspicion of a structural injury (meniscus tear, ligament tear), when conservative treatment isn't working, or when surgery is being considered. mri.md recommends discussing with your doctor whether MRI would change your treatment plan before ordering it."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
