@@ -62,111 +62,136 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mri.md/#website",
+      "url": "https://mri.md",
+      "name": "mri.md — MRI Scan Information Guide",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://mri.md/#webpage",
+      "name": "MRI Scan — Magnetic Resonance Imaging Guide",
+      "description": "Evidence-based guide to MRI scans including types, preparation, what to expect, claustrophobia management, and understanding results.",
+      "url": "https://mri.md/",
+      "isPartOf": {
+        "@id": "https://mri.md/#website"
+      },
+      "lastReviewed": "2026-02-06",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalProcedure",
+        "name": "Magnetic Resonance Imaging (MRI)",
+        "alternateName": [
+          "MRI Scan",
+          "MR Imaging",
+          "Nuclear Magnetic Resonance Imaging"
+        ],
+        "description": "MRI is a non-invasive imaging technique that uses powerful magnetic fields and radio waves to create detailed images of organs, soft tissues, bone, and other internal body structures without using ionizing radiation.",
+        "procedureType": "DiagnosticProcedure",
+        "bodyLocation": "Any body part including brain, spine, joints, abdomen, chest, pelvis",
+        "howPerformed": "Patient lies on a motorized table that slides into a tube-shaped magnet. Radio waves create signals that are processed by a computer to generate cross-sectional images.",
+        "preparation": "Remove all metal objects, inform staff of implants, may require fasting for abdominal scans, contrast agents may be administered intravenously",
+        "followup": "Results typically available within 24-48 hours, reviewed by radiologist and sent to ordering physician",
+        "status": "EventScheduled",
+        "typicalTest": [
+          "Brain MRI",
+          "Spine MRI",
+          "Cardiac MRI",
+          "Musculoskeletal MRI",
+          "Abdominal MRI",
+          "Breast MRI"
+        ],
+        "recognizingAuthority": {
           "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
-        },
+          "name": "American College of Radiology"
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".stat-number",
+          ".hero-subtitle"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mri.md/#faq",
+      "mainEntity": [
         {
-          "@type": "WebSite",
-          "@id": "https://mri.md/#website",
-          "url": "https://mri.md",
-          "name": "mri.md — MRI Scan Information Guide",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
-        },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://mri.md/#webpage",
-          "name": "MRI Scan — Magnetic Resonance Imaging Guide",
-          "description": "Evidence-based guide to MRI scans including types, preparation, what to expect, claustrophobia management, and understanding results.",
-          "url": "https://mri.md/",
-          "isPartOf": {"@id": "https://mri.md/#website"},
-          "lastReviewed": "2026-02-06",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalProcedure",
-            "name": "Magnetic Resonance Imaging (MRI)",
-            "alternateName": ["MRI Scan", "MR Imaging", "Nuclear Magnetic Resonance Imaging"],
-            "description": "MRI is a non-invasive imaging technique that uses powerful magnetic fields and radio waves to create detailed images of organs, soft tissues, bone, and other internal body structures without using ionizing radiation.",
-            "procedureType": "DiagnosticProcedure",
-            "bodyLocation": "Any body part including brain, spine, joints, abdomen, chest, pelvis",
-            "howPerformed": "Patient lies on a motorized table that slides into a tube-shaped magnet. Radio waves create signals that are processed by a computer to generate cross-sectional images.",
-            "preparation": "Remove all metal objects, inform staff of implants, may require fasting for abdominal scans, contrast agents may be administered intravenously",
-            "followup": "Results typically available within 24-48 hours, reviewed by radiologist and sent to ordering physician",
-            "status": "EventScheduled",
-            "typicalTest": ["Brain MRI", "Spine MRI", "Cardiac MRI", "Musculoskeletal MRI", "Abdominal MRI", "Breast MRI"],
-            "recognizingAuthority": {
-              "@type": "Organization",
-              "name": "American College of Radiology"
-            }
-          },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
+          "@type": "Question",
+          "name": "What is an MRI scan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MRI (Magnetic Resonance Imaging) is a non-invasive medical imaging technique that uses powerful magnetic fields and radio waves to create detailed images of the body's internal structures. Unlike X-rays and CT scans, MRI does not use ionizing radiation. It's particularly effective for imaging soft tissues, the brain, spinal cord, joints, and organs."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://mri.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is an MRI scan?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "MRI (Magnetic Resonance Imaging) is a non-invasive medical imaging technique that uses powerful magnetic fields and radio waves to create detailed images of the body's internal structures. Unlike X-rays and CT scans, MRI does not use ionizing radiation. It's particularly effective for imaging soft tissues, the brain, spinal cord, joints, and organs."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is an MRI scan safe?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "MRI is considered very safe for most patients as it does not use ionizing radiation. However, the strong magnetic field can be dangerous for people with certain metal implants, pacemakers, or other electronic medical devices. Pregnant women should inform their doctor, though MRI has been used safely in pregnancy when medically necessary. Gadolinium contrast agents are generally safe but may pose risks for people with severe kidney disease."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does an MRI take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A typical MRI scan takes 30-60 minutes, depending on the body part being imaged and whether contrast is used. Some complex studies like cardiac MRI may take 60-90 minutes. Patients must remain still during the scan for clear images. Including preparation and positioning, plan for approximately 90 minutes total appointment time."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What if I'm claustrophobic?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Claustrophobia affects 5-10% of MRI patients. Options include: open MRI machines (wider bore, less confined), mild sedation prescribed by your doctor, headphones with music or earplugs, keeping eyes closed during the scan, having a support person in the room, or practicing relaxation techniques. Tell your doctor about anxiety beforehand so they can help plan accommodations."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is MRI with contrast?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "MRI with contrast involves injecting a gadolinium-based contrast agent intravenously before or during the scan. This enhances visualization of blood vessels, inflammation, tumors, and certain abnormalities that might not be visible on a standard MRI. The contrast is generally eliminated from the body within 24 hours through the kidneys. It's different from CT contrast (iodine-based) and has fewer allergic reactions."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why is an MRI so loud?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The loud knocking, thumping, and buzzing sounds during an MRI (up to 100 decibels, similar to a lawn mower) are caused by the rapid switching of magnetic field gradients. These gradient coils vibrate as electrical currents pass through them, similar to a loudspeaker. Patients are given earplugs or headphones to protect their hearing, and some facilities offer music during the scan."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Is an MRI scan safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MRI is considered very safe for most patients as it does not use ionizing radiation. However, the strong magnetic field can be dangerous for people with certain metal implants, pacemakers, or other electronic medical devices. Pregnant women should inform their doctor, though MRI has been used safely in pregnancy when medically necessary. Gadolinium contrast agents are generally safe but may pose risks for people with severe kidney disease."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does an MRI take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical MRI scan takes 30-60 minutes, depending on the body part being imaged and whether contrast is used. Some complex studies like cardiac MRI may take 60-90 minutes. Patients must remain still during the scan for clear images. Including preparation and positioning, plan for approximately 90 minutes total appointment time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I'm claustrophobic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Claustrophobia affects 5-10% of MRI patients. Options include: open MRI machines (wider bore, less confined), mild sedation prescribed by your doctor, headphones with music or earplugs, keeping eyes closed during the scan, having a support person in the room, or practicing relaxation techniques. Tell your doctor about anxiety beforehand so they can help plan accommodations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is MRI with contrast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MRI with contrast involves injecting a gadolinium-based contrast agent intravenously before or during the scan. This enhances visualization of blood vessels, inflammation, tumors, and certain abnormalities that might not be visible on a standard MRI. The contrast is generally eliminated from the body within 24 hours through the kidneys. It's different from CT contrast (iodine-based) and has fewer allergic reactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is an MRI so loud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The loud knocking, thumping, and buzzing sounds during an MRI (up to 100 decibels, similar to a lawn mower) are caused by the rapid switching of magnetic field gradients. These gradient coils vibrate as electrical currents pass through them, similar to a loudspeaker. Patients are given earplugs or headphones to protect their hearing, and some facilities offer music during the scan."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -1153,7 +1178,32 @@
         <div class="review-date">
             <strong>Medical Information Reviewed:</strong> February 2026 · Sources include American College of Radiology (ACR), RadiologyInfo.org, and peer-reviewed medical literature.
         </div>
-
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What is an MRI scan?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">MRI (Magnetic Resonance Imaging) is a non-invasive medical imaging technique that uses powerful magnetic fields and radio waves to create detailed images of the body&#x27;s internal structures. Unlike X-rays and CT scans, MRI does not use ionizing radiation. It&#x27;s particularly effective for imaging soft tissues, the brain, spinal cord, joints, and organs.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Is an MRI scan safe?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">MRI is considered very safe for most patients as it does not use ionizing radiation. However, the strong magnetic field can be dangerous for people with certain metal implants, pacemakers, or other electronic medical devices. Pregnant women should inform their doctor, though MRI has been used safely in pregnancy when medically necessary. Gadolinium contrast agents are generally safe but may pose risks for people with severe kidney disease.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What if I&#x27;m claustrophobic?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Claustrophobia affects 5-10% of MRI patients. Options include: open MRI machines (wider bore, less confined), mild sedation prescribed by your doctor, headphones with music or earplugs, keeping eyes closed during the scan, having a support person in the room, or practicing relaxation techniques. Tell your doctor about anxiety beforehand so they can help plan accommodations.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What is MRI with contrast?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">MRI with contrast involves injecting a gadolinium-based contrast agent intravenously before or during the scan. This enhances visualization of blood vessels, inflammation, tumors, and certain abnormalities that might not be visible on a standard MRI. The contrast is generally eliminated from the body within 24 hours through the kidneys. It&#x27;s different from CT contrast (iodine-based) and has fewer allergic reactions.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Why is an MRI so loud?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">The loud knocking, thumping, and buzzing sounds during an MRI (up to 100 decibels, similar to a lawn mower) are caused by the rapid switching of magnetic field gradients. These gradient coils vibrate as electrical currents pass through them, similar to a loudspeaker. Patients are given earplugs or headphones to protect their hearing, and some facilities offer music during the scan.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="related">
             <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Related Topics</div>
